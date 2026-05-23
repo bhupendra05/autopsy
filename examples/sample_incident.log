@@ -1,0 +1,22 @@
+2026-05-24T14:00:01Z INFO  app started, listening on :8080
+2026-05-24T14:00:02Z INFO  connected to postgres://prod-db:5432/myapp
+2026-05-24T14:00:03Z INFO  connected to redis://prod-cache:6379
+2026-05-24T14:28:15Z INFO  deploy completed: v2.4.1 → v2.5.0
+2026-05-24T14:28:45Z WARN  slow query detected: SELECT * FROM orders WHERE user_id=? took 4200ms
+2026-05-24T14:29:01Z WARN  slow query detected: SELECT * FROM orders WHERE user_id=? took 6800ms
+2026-05-24T14:29:15Z ERROR database connection pool exhausted (pool_size=20, waiting=34)
+2026-05-24T14:29:16Z ERROR failed to process request: context deadline exceeded
+2026-05-24T14:29:17Z ERROR failed to process request: context deadline exceeded
+2026-05-24T14:29:18Z ERROR failed to process request: context deadline exceeded
+2026-05-24T14:29:20Z FATAL unhandled panic: runtime error: invalid memory address or nil pointer dereference
+2026-05-24T14:29:20Z INFO  service restarted by supervisor
+2026-05-24T14:29:25Z ERROR database connection pool exhausted (pool_size=20, waiting=41)
+2026-05-24T14:29:26Z ERROR failed to process request: context deadline exceeded
+2026-05-24T14:30:01Z ERROR EXCEPTION in OrderService.GetOrders: null pointer dereference at orders.go:142
+2026-05-24T14:30:02Z ERROR EXCEPTION in OrderService.GetOrders: null pointer dereference at orders.go:142
+2026-05-24T14:31:00Z WARN  memory usage at 94% (7.5GB/8GB)
+2026-05-24T14:31:15Z ERROR OOM killer invoked — process killed
+2026-05-24T14:31:15Z INFO  service restarted by supervisor
+2026-05-24T14:35:00Z INFO  hotfix deployed: v2.5.1
+2026-05-24T14:35:30Z INFO  slow queries resolved, pool utilization normal
+2026-05-24T14:36:00Z INFO  service healthy

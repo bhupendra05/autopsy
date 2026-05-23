@@ -1,0 +1,6 @@
+[
+  {"timestamp": "2026-05-24T14:28:15Z", "service": "api-server", "version": "v2.5.0", "status": "success"},
+  {"timestamp": "2026-05-24T14:35:00Z", "service": "api-server", "version": "v2.5.1", "status": "success"},
+  {"timestamp": "2026-05-23T18:00:00Z", "service": "user-service", "version": "v1.2.0", "status": "success"},
+  {"timestamp": "2026-05-22T10:00:00Z", "service": "api-server", "version": "v2.4.1", "status": "success"}
+]

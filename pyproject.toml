@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autopsy-ai"
+version = "0.1.0"
+description = "AI-powered production incident root cause analyzer using Claude Opus 4.7's extended thinking."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Bhupendra Gurjar", email = "bgurjar05.bg@gmail.com" }]
+keywords = ["incident", "postmortem", "root-cause", "sre", "devops", "llm", "claude", "anthropic", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Logging",
+    "Topic :: System :: Monitoring",
+]
+dependencies = [
+    "pydantic>=2.0",
+    "anthropic>=0.40.0",
+    "click>=8.0",
+    "rich>=13.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov"]
+
+[project.scripts]
+autopsy = "autopsy.cli:main"
+
+[project.urls]
+Homepage  = "https://github.com/bhupendra05/autopsy"
+Repository = "https://github.com/bhupendra05/autopsy"
+Issues    = "https://github.com/bhupendra05/autopsy/issues"
+
+[tool.setuptools.packages.find]
+include = ["autopsy*"]

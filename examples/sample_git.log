@@ -1,0 +1,5 @@
+a3f1c9d 2026-05-24T14:28:00Z fix: remove N+1 query guard in OrderService.GetOrders
+b2e8d7a 2026-05-24T13:10:00Z feat: add pagination to order listing API
+c9f2a1b 2026-05-23T18:45:00Z refactor: extract UserService from monolith
+d4e3b8c 2026-05-23T11:20:00Z chore: bump dependencies
+e1a7c5d 2026-05-22T16:30:00Z feat: add bulk order export endpoint
