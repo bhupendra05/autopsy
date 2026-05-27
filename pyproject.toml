@@ -9,7 +9,7 @@ description = "AI-powered production incident root cause analyzer using Claude O
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
-authors = [{ name = "Bhupendra Gurjar", email = "bgurjar05.bg@gmail.com" }]
+authors = [{ name = "Bhupendra Tale", email = "bgurjar05.bg@gmail.com" }]
 keywords = ["incident", "postmortem", "root-cause", "sre", "devops", "llm", "claude", "anthropic", "observability"]
 classifiers = [
     "Development Status :: 4 - Beta",
